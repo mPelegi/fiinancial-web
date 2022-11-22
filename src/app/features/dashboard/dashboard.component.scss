@@ -1,0 +1,17 @@
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+
+  .chart-investments {
+    width: 950px;
+    height: 450px;
+    margin-right: 1em;
+  }
+
+  .chart-values {    
+    width: 450px;
+    height: 225px;
+  }
+}

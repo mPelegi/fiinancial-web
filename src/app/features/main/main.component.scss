@@ -1,0 +1,78 @@
+.main-container {
+  color: white;
+  width: 100%;
+  height: 100%;
+
+  .sidenav-menu {
+      width: 250px;
+      background: #002b5c;
+      color: white;
+
+      .app-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        padding-left: .5em;
+        padding-right: .5em;
+
+        span {
+          flex: .9;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+
+        button {
+          flex: .1;
+          color: white;
+        }
+      }
+
+      .menu-wrapper {
+
+        padding: 1em;
+
+        .menu-button {
+          color: white;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-size: 1rem;
+  
+          fa-icon {
+            margin-right: 1em;
+          }
+        }:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      color: black;
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+
+    .content-wrapper {
+      color: black;
+      background-color: rgba(206, 197, 197, 0.26);
+      width: 100%;
+      height: calc(100vh - 71px);
+    }
+  }
+}
+
+mat-divider {  
+  margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}

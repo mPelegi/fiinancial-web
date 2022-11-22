@@ -1,0 +1,35 @@
+<mat-sidenav-container class="main-container">
+  <mat-sidenav class="mat-elevation-z2 sidenav-menu" mode="side" opened>
+    <div class="app-name">
+      <span>Fiinancial</span>
+      <button *ngIf="isOpen" mat-button (click)="toggle()">
+        <fa-icon [icon]="faChevronLeft"></fa-icon>
+      </button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="menu-wrapper">
+      <button mat-button class="menu-button" routerLink="/main/dashboard">
+        <fa-icon [icon]="faHouse"></fa-icon>
+        <span>Dashboard</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/main/account">
+        <fa-icon [icon]="faUser"></fa-icon>
+        <span>Conta</span>
+      </button>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <div class="header mat-elevation-z2">
+        <button mat-button (click)="toggle()">
+          <div *ngIf="!isOpen">
+            <fa-icon [icon]="faChevronRight"></fa-icon>
+          </div>
+        </button>
+        <div>Bem-vindo, Murilo</div>
+      </div>
+
+      <div class="content-wrapper"><router-outlet></router-outlet></div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

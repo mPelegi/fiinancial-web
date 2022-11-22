@@ -1,0 +1,14 @@
+<div class="auth-container">
+    <form [formGroup]="formGroup" class="wrapper">
+        <mat-form-field class="full-width">
+            <mat-label>Usuário</mat-label>
+            <input matInput type="email">
+          </mat-form-field>
+        
+          <mat-form-field class="full-width">
+            <mat-label>Senha</mat-label>
+            <input matInput type="password">
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="login()">Login</button>
+    </form>
+</div>

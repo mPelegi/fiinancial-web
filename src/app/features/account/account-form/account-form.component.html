@@ -1,0 +1,34 @@
+<div class="form-container">
+  <mat-card class="card-wrapper">
+    <mat-card-content>
+      <form [formGroup]="formGroup" class="wrapper">
+        <mat-form-field class="full-width">
+          <mat-label>Tipo</mat-label>
+          <input formControlName="type"  matInput />
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Valor</mat-label>
+          <input formControlName="value" type="number" matInput />
+        </mat-form-field>
+        
+        <mat-form-field class="full-width">
+          <mat-label>Abertura</mat-label>
+          <input formControlName="openingDate" type="date" matInput />
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Vencimento</mat-label>
+            <input formControlName="dueDate" type="date" matInput />
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Pagamento</mat-label>
+            <input formControlName="payday" type="date" matInput />
+        </mat-form-field>
+
+      </form>
+      <button mat-raised-button color="primary" (click)="save()">Salvar</button>
+    </mat-card-content>
+  </mat-card>
+</div>
